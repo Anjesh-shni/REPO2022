@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 8,
-        title: Text('Plazy'),
+        title: Text('Point of sale'),
         backgroundColor: Colors.blueGrey,
         actions: [
           IconButton(
@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget {
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 3, childAspectRatio: 1.2),
-                    itemCount: TablIndex.table_list.length,
+                    itemCount: 20,
                     itemBuilder: (c, i) {
                       int initial = i + 1;
                       return InkWell(
