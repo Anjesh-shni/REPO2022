@@ -8,7 +8,7 @@ const windowHeight = Dimensions.get('window').height;
 const App = () => {
   return <View>
     <FirstPage 
-    title='mero ghar jnakpur'
+    title='mero ghar jnakp'
     label='hello first appp'
     />
   </View>
