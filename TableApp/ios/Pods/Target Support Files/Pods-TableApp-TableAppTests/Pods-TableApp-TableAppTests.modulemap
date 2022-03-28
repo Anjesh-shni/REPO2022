@@ -1,0 +1,6 @@
+module Pods_TableApp_TableAppTests {
+  umbrella header "Pods-TableApp-TableAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

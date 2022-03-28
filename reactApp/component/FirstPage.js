@@ -14,5 +14,11 @@ const FirstPage = ({title, label}) => {
 export default FirstPage
 
 const styles = StyleSheet.create({
-
-})
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: "black",
+    },
+      
+});

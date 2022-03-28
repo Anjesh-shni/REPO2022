@@ -1,0 +1,6 @@
+module Pods_TableApp {
+  umbrella header "Pods-TableApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
