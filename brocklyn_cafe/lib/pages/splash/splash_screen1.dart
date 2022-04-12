@@ -9,7 +9,6 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -49,8 +48,6 @@ class _SplashScreenState extends State<SplashScreen>
     });
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -86,8 +83,12 @@ class _SplashScreenState extends State<SplashScreen>
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         AnimatedCrossFade(
+<<<<<<< HEAD
+                          firstChild: Lottie.asset('images/foodprep2.json'),
+=======
                           firstChild:
                               Lottie.asset('assets/image/foodprep2.json'),
+>>>>>>> parent of 4fe81b25 (today)
                           secondChild: Lottie.asset(
                             'assets/image/foodprep1.json',
                             controller: _coffeeController,
@@ -122,38 +123,39 @@ class _SplashScreenState extends State<SplashScreen>
                   ),
                 ],
               ),
-              GestureDetector(
-                onTap: () {
-                  // Get.to(MyStatefulWidget);
-                  // Get.offNamed(RouteHelper.getInitial());
-                },
-                child: Container(
-                  margin: EdgeInsets.only(
-                      top: Dimen.height40 * 4.5, left: Dimen.width30 * 8),
-                  padding: EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: Colors.blueGrey,
-                    borderRadius:
-                        BorderRadiusDirectional.circular(Dimen.radius15),
-                  ),
-                  child: Text(
-                    "Home",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.normal,
-                    ),
-                    textAlign: TextAlign.right,
-                  ),
-                ),
-              ),
+              // GestureDetector(
+              //   onTap: () {
+              //     // Get.to(MyStatefulWidget);
+              //     // Get.offNamed(RouteHelper.getInitial());
+              //   },
+              //   child: Container(
+              //     margin: EdgeInsets.only(
+              //         top: Dimen.height40 * 4.5, left: Dimen.width30 * 8),
+              //     padding: EdgeInsets.all(16),
+              //     decoration: BoxDecoration(
+              //       color: Colors.blueGrey,
+              //       borderRadius:
+              //           BorderRadiusDirectional.circular(Dimen.radius15),
+              //     ),
+              //     child: Text(
+              //       "Home",
+              //       style: TextStyle(
+              //         color: Colors.white,
+              //         fontSize: 20,
+              //         fontWeight: FontWeight.normal,
+              //       ),
+              //       textAlign: TextAlign.right,
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),
       ),
     );
   }
-    @override
+
+  @override
   void dispose() {
     _coffeeController.dispose();
     super.dispose();

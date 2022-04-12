@@ -1,3 +1,5 @@
+import 'package:brocklyn_cafe/cart/cart_history_page.dart';
+import 'package:brocklyn_cafe/cart/cart_page.dart';
 import 'package:brocklyn_cafe/pages/account/account_page.dart';
 import 'package:brocklyn_cafe/pages/home/mian_page.dart';
 import 'package:brocklyn_cafe/utils/colors.dart';
@@ -14,6 +16,13 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   List pages = [
     MainPage(),
+<<<<<<< HEAD
+    CartHistory(),
+    CartPage(),
+
+    // CartHistory(),
+    AccountPage(),
+=======
     Container(
       child: Center(child: Text("welcome")),
     ),
@@ -21,6 +30,7 @@ class _HomePageState extends State<HomePage> {
         
         // CartHistory(),
         AccountPage(),
+>>>>>>> parent of 4fe81b25 (today)
   ];
 
   void onTapNav(int index) {

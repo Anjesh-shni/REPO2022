@@ -66,8 +66,8 @@ class ProductModel {
     typeId = json['type_id'];
   }
 
-  Map<String,dynamic> toJson(){
- return {
+  Map<String, dynamic> toJson() {
+    return {
       "id": this.id,
       "name": this.name,
       "price": this.price,

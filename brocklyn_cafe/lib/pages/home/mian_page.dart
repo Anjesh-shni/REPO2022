@@ -1,8 +1,14 @@
+<<<<<<< HEAD
+import 'package:brocklyn_cafe/pages/more_page/table_page.dart';
+import 'package:brocklyn_cafe/routes/routes_helper.dart';
+=======
+>>>>>>> parent of 4fe81b25 (today)
 import 'package:brocklyn_cafe/utils/colors.dart';
 import 'package:brocklyn_cafe/utils/dimension.dart';
 import 'package:brocklyn_cafe/widget/bigtext.dart';
 import 'package:brocklyn_cafe/widget/smalltext.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 
 class MainPage extends StatefulWidget {
@@ -53,6 +59,44 @@ class _MainPageState extends State<MainPage> {
                     ],
                   ),
                   Center(
+<<<<<<< HEAD
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _isElevated = !_isElevated;
+                          Get.toNamed(RouteHelper.cartPage);
+                        });
+                      },
+                      child: AnimatedContainer(
+                        duration: Duration(milliseconds: 200),
+                        height: 40,
+                        width: 80,
+                        decoration: BoxDecoration(
+                            color: Colors.grey[300],
+                            borderRadius: BorderRadius.circular(50),
+                            boxShadow: _isElevated
+                                ? [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      offset: Offset(4, 4),
+                                      spreadRadius: 1,
+                                      blurRadius: 15,
+                                    ),
+                                    BoxShadow(
+                                      color: Colors.white,
+                                      offset: Offset(-4, -4),
+                                      spreadRadius: 1,
+                                      blurRadius: 15,
+                                    ),
+                                  ]
+                                : null),
+                        child: Center(
+                          child: Icon(
+                            Icons.shopping_cart_outlined,
+                            color: Colors.black,
+                          ),
+                        ),
+=======
                     child: Container(
                       width: Dimen.height45,
                       height: Dimen.height45,
@@ -64,6 +108,7 @@ class _MainPageState extends State<MainPage> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(Dimen.radius15),
                         color: ApClrs.mainClr,
+>>>>>>> parent of 4fe81b25 (today)
                       ),
                     ),
                   ),
@@ -81,5 +126,11 @@ class _MainPageState extends State<MainPage> {
         ],
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    // _isElevated.dispose();
+    super.dispose();
   }
 }

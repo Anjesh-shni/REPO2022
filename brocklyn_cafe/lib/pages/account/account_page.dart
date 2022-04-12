@@ -14,7 +14,7 @@ class AccountPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: ApClrs.mainClr,
+        backgroundColor: Colors.green.shade300,
         centerTitle: true,
         title: BigText(text: "Profiles"),
       ),
@@ -44,7 +44,7 @@ class AccountPage extends StatelessWidget {
                     AccountWidget(
                       appIcon: AppIcon(
                         icon: Icons.person,
-                        backgound: ApClrs.mainClr,
+                        backgound: Colors.green.shade300,
                         size: Dimen.height10 * 5,
                         iconSize: Dimen.height15 + Dimen.height10,
                         iconColor: ApClrs.mainBlackClr,
